@@ -2,7 +2,7 @@ import 'babel-polyfill'
 
 import MainApp from 'example/MainApp.js'
 
-function aaa() {
+function run() {
     return new Promise(async (resolve, reject) => {
         try {
             await MainApp.clean();
@@ -18,7 +18,7 @@ function aaa() {
     })
 };
 
-aaa().then(() => {
+run().then(() => {
     console.log("Successful");
 })
 .catch((e) => {
